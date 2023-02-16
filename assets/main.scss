@@ -35,3 +35,7 @@
 .v-overlay__content {
   background: rgba(var(--v-theme-surface-variant), 1) !important;
 }
+
+.swiper-slide .v-container {
+  box-sizing: border-box !important;
+}

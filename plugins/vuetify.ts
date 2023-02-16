@@ -12,6 +12,16 @@ export default defineNuxtPlugin(nuxtApp => {
       VBtn: {
         rounded: '2'
       }
+    },
+
+    theme: {
+      themes: {
+        light: {
+          colors: {
+            'primary': '#000'
+          }
+        }
+      }
     }
   })
 
