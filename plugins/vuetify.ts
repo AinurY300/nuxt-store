@@ -11,6 +11,10 @@ export default defineNuxtPlugin(nuxtApp => {
     defaults: {
       VBtn: {
         rounded: '2'
+      },
+      VCard: {
+        elevation: 0,
+        rounded: 'lg'
       }
     },
 

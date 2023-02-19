@@ -1,24 +1,25 @@
 <script setup lang="ts">
 
+
 </script>
 
 <template>
   <Swiper :loop="true" class="the-banner">
-    <SwiperSlide v-for="slide in 10" :key="slide">
+    <SwiperSlide v-for="slide in 2" :key="slide">
       <v-sheet color="black">
-        <v-container>
-          <v-row>
+        <v-container class="fill-height">
+          <v-row align="center">
             <v-col>
-              <h2 class="mb-2 text-h3">MacBook Pro</h2>
+              <h4 class="mb-2 text-h4 font-weight-bold">MacBook Pro</h4>
               <p>
                 MacBook Pro достигает невероятной мощности и эффективности. 
                 Кроме того, он оснащен потрясающим дисплеем Liquid Retina XDR - 
                 это профессиональный ноутбук без равных.
               </p>
-              <v-btn class="mt-4">Узнать подробнее</v-btn>
+              <v-btn flat class="mt-4 bg-blue">Узнать подробнее</v-btn>
             </v-col>
             <v-col>
-              <v-img src=""/>
+              <v-img height="400" src="https://rmumvzehdoeteomoitcr.supabase.co/storage/v1/object/public/images/banner/MacBook.jpg"/>
             </v-col>
           </v-row>
         </v-container>

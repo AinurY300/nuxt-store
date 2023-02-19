@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
-  modules: ['@pinia/nuxt', 'nuxt-swiper'],
+  modules: [
+    '@pinia/nuxt', 
+    'nuxt-swiper',
+  ],
 
   pinia: {
     autoImports: [
@@ -13,6 +16,7 @@ export default defineNuxtConfig({
   },
 
   build: { transpile: ["vuetify"] },
+
 	vite: {
     ssr: {
       noExternal: ["vuetify"],
@@ -21,5 +25,6 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
 	},
+
   css: ['vuetify/lib/styles/main.sass', '@/assets/main.scss', '@mdi/font/css/materialdesignicons.min.css'],
 })
