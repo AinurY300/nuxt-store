@@ -16,10 +16,10 @@
                 Кроме того, он оснащен потрясающим дисплеем Liquid Retina XDR - 
                 это профессиональный ноутбук без равных.
               </p>
-              <v-btn flat class="mt-4 bg-blue">Узнать подробнее</v-btn>
+              <v-btn flat class="mt-4 bg-white">Узнать подробнее</v-btn>
             </v-col>
             <v-col>
-              <v-img height="400" src="https://rmumvzehdoeteomoitcr.supabase.co/storage/v1/object/public/images/banner/MacBook.jpg"/>
+              <v-img height="400" src=""/>
             </v-col>
           </v-row>
         </v-container>
