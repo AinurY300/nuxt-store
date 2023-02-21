@@ -9,7 +9,8 @@ const cart = useCartStore()
     <v-container>
       <v-row align="center">
         <v-col>
-          <v-app-bar-title class="font-weight-bold">NuxtStore</v-app-bar-title>
+          <v-btn to="/" prepend-icon="mdi-home-outline">На главную</v-btn>
+            <!-- <v-app-bar-title class="font-weight-bold">NuxtStore</v-app-bar-title> -->
         </v-col>
         <v-spacer/>
         <v-col cols="auto">

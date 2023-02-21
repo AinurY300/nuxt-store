@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Database } from '@/models/supabase.types'
-
 const advantages = [
   {
     id: 1,
@@ -28,11 +26,10 @@ const advantages = [
   },
 ]
 
-const supabase = useSupabaseClient<Database>()
-const { data: categories } = await supabase
-  .from('categories')
-  .select()
-  .order('index')
+const s = await $retailcrm('/credentials')
+console.log(s)
+
+ 
 </script>
 
 <template>
@@ -40,16 +37,7 @@ const { data: categories } = await supabase
   <TheBanner/>
   <!-- Catalog -->
   <v-container>
-    <v-row>
-      <v-col v-for="category in categories" :cols="category.name == 'Ноутбуки' ? 8 : 4" :key="category.id">
-        <v-card border to="/">
-          <v-img height="300" :src="category.img"/>
-          <v-card-text>
-            <v-chip rounded="lg" class="bg-black">{{ category.name }}</v-chip>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
+    
   </v-container>
   <!-- Advantages -->
   <v-sheet color="black">
