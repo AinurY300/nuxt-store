@@ -3,15 +3,13 @@ export default defineNuxtConfig({
     '@pinia/nuxt', 
     'nuxt-swiper',
     'nuxt-typed-router',
-    'nuxt-api-party'
+    '@nuxtjs/supabase'
   ],
 
-  apiParty: {
-    name: 'retailcrm',
-    url: process.env.RETAILCRM_URL,
-    headers: {
-      'X-API-KEY': process.env.RETAILCRM_KEY || ''
-    }
+  supabase: {
+    url: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    key: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    serviceKey: process.env.SUPABASE_SERVICE_ROLE_KEY
   },
 
   pinia: {

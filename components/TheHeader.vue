@@ -9,22 +9,24 @@ const cart = useCartStore()
     <v-container>
       <v-row align="center">
         <v-col>
-          <v-btn to="/" prepend-icon="mdi-home-outline">На главную</v-btn>
-            <!-- <v-app-bar-title class="font-weight-bold">NuxtStore</v-app-bar-title> -->
+          <!-- <v-btn to="/" prepend-icon="mdi-home-outline">На главную</v-btn> -->
+          <nuxt-link to="/" class="text-decoration-none text-high-emphasis">
+            <v-app-bar-title class="font-weight-bold">чистаяпаль.</v-app-bar-title>
+          </nuxt-link>
         </v-col>
         <v-spacer/>
         <v-col cols="auto">
           <v-btn icon="mdi-magnify"></v-btn>
 
-          <v-tooltip text="Корзина" location="bottom">
+          <v-btn icon="mdi-shopping-outline" @click="cart.open = !cart.open"/>
+            <!-- <v-badge :content="5" color="error">
+              <v-icon icon="mdi-shopping-outline"/>
+            </v-badge> -->
+          <!-- </v-btn> -->
+          <!-- <v-tooltip text="Корзина" location="bottom">
             <template v-slot:activator="{ props }">
-              <v-btn icon v-bind="props" @click="cart.open = !cart.open">
-                <v-badge :content="5" color="error">
-                  <v-icon icon="mdi-shopping-outline"/>
-                </v-badge>
-              </v-btn>
             </template>
-          </v-tooltip>
+          </v-tooltip> -->
           
           <v-dialog max-width="373">
             <template #activator="{ props }">

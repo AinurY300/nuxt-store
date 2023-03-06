@@ -15,14 +15,21 @@ export default defineNuxtPlugin(nuxtApp => {
       VCard: {
         elevation: 0,
         rounded: 'lg'
+      },
+      VCheckbox: {
+        falseIcon: 'mdi-checkbox-blank',
+        density: 'compact',
+        hideDetails: true
       }
     },
 
     theme: {
+      // defaultTheme: 'dark',
       themes: {
         light: {
           colors: {
-            'primary': '#000'
+            'primary': '#000',
+            'background': '#F2F2F2'
           }
         }
       }
