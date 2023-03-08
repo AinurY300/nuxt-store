@@ -1,4 +1,7 @@
 <script setup lang="ts">
+// import { Database } from '~~/models/supabase.types'
+
+
 
 
 // const advantages = [
@@ -28,55 +31,14 @@
 //   },
 // ]
 
-
-
-
 </script>
 
 <template>
   <!-- Banner -->
-  <TheBanner/>
+  <!-- <TheBanner/> -->
 
-  <!-- Catalog -->
   <v-container>
 
-    <!-- {{ products }} -->
-    <v-row>
-
-
-      <!-- <template v-for="group in productGroup"> -->
-
-        <!-- <v-col cols="4">
-          <v-card border :to="{ name: 'productGroup', params: { productGroup: 'smartphones' }, query: { groupId: group.id } }">
-            <v-img height="300" src="https://rmumvzehdoeteomoitcr.supabase.co/storage/v1/object/public/images/catalog/Smartphones.png"/>
-            <v-card-text>
-              <v-chip rounded="lg" class="bg-black">{{ group.name }}</v-chip>
-            </v-card-text>
-          </v-card>
-        </v-col> -->
-      <!-- </template> -->
-
-      <!-- <template v-for="group in productGroup"> -->
-        <!-- Смартфоны -->
-        <!-- <v-col v-if="group.name == 'Смартфоны'" :cols="4">
-          <v-card border :to="{ name: 'productGroup', params: { productGroup: 'smartphones' }, query: { groupId: group.id } }">
-            <v-img height="300" src="https://rmumvzehdoeteomoitcr.supabase.co/storage/v1/object/public/images/catalog/Smartphones.png"/>
-            <v-card-text>
-              <v-chip rounded="lg" class="bg-black">{{ group.name }}</v-chip>
-            </v-card-text>
-          </v-card>
-        </v-col> -->
-        <!-- Ноутбуки -->
-        <!-- <v-col v-if="group.name == 'Ноутбуки'" :cols="8">
-          <v-card border :to="{ name: 'productGroup', params: { productGroup: 'notebooks' }, query: { groupId: group.id } }">
-            <v-img height="300" src="https://rmumvzehdoeteomoitcr.supabase.co/storage/v1/object/public/images/catalog/Notebooks.png"/>
-            <v-card-text>
-              <v-chip rounded="lg" class="bg-black">{{ group.name }}</v-chip>
-            </v-card-text>
-          </v-card>
-        </v-col> -->
-      <!-- </template> -->
-    </v-row>
   </v-container>
 
   <!-- Advantages -->
@@ -99,3 +61,6 @@
     </v-container>
   </v-sheet> -->
 </template>
+
+
+

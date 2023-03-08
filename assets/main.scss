@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-// npx supabase gen types typescript --db-url postgresql://postgres:S8msZOiHtHUANYKR@db.rmumvzehdoeteomoitcr.supabase.co:5432/postgres > ./models/supabase.types.ts
-
+// npx supabase gen types typescript --project-id rfmxqycymrobqdjwjlzy > .\models\supabase.types.ts
 * {
   font-family: 'Jost', sans-serif !important;
   // border-color: #000 !important;
@@ -10,7 +9,8 @@
 
 .v-toolbar,
 .v-app-bar {
-  border-bottom-width: 1px !important;
+  box-shadow: 0px -1px 0px 0px rgba(var(--v-border-color), var(--v-border-opacity)) inset !important;
+  // border-bottom-width: 2px !important;
 }
 
 .v-footer {
