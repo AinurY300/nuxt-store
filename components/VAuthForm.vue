@@ -9,6 +9,7 @@ const phone = ref('+7')
       <v-card-text class="text-capiton">Введите номер телефона и мы отправим СМС с кодом подтверждения.</v-card-text>
       <v-card-text class="py-0">
         <v-text-field
+          variant="outlined"
           autofocus
           type="email" 
           label="Номер телефона"

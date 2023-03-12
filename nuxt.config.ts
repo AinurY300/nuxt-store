@@ -12,13 +12,6 @@ export default defineNuxtConfig({
     serviceKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
   },
 
-  pinia: {
-    autoImports: [
-      'defineStore', // import { defineStore } from 'pinia'
-      ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
-    ],
-  },
-
   swiper: {
     styleLang: 'scss'
   },

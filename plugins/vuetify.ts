@@ -14,7 +14,7 @@ export default defineNuxtPlugin(nuxtApp => {
       },
       VCard: {
         elevation: 0,
-        rounded: 'lg'
+        rounded: '2'
       },
       VCheckbox: {
         falseIcon: 'mdi-checkbox-blank',
@@ -24,7 +24,7 @@ export default defineNuxtPlugin(nuxtApp => {
     },
 
     theme: {
-      // defaultTheme: 'dark',
+      defaultTheme: 'dark',
       themes: {
         light: {
           colors: {

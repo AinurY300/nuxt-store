@@ -1,17 +1,10 @@
 <script setup lang="ts">
-import { useCartStore } from '~~/store/cart';
-import { Database } from '~~/models/supabase.types';
-// import { slugify } from 'transliteration'
+import { useCategoriesStore } from '~~/store/categories';
+const store = useCategoriesStore()
+const categories = await store.getCategories()
 
-const cart = useCartStore()
-const supabase = useSupabaseClient<Database>()
 
-const { data: categories } = await supabase
-  .from('categories')
-  .select('id, name, slug')
-  .is('parent_id', null)
-
-const hoverTabId = ref<Database['public']['Tables']['categories']['Row']['id']>()
+const hoverTabId = ref<typeof categories[number]['id']>()
 </script>
 
 <template>
@@ -44,11 +37,11 @@ const hoverTabId = ref<Database['public']['Tables']['categories']['Row']['id']>(
             <v-col cols="auto">
               <v-btn icon="mdi-magnify"></v-btn>
 
-              <v-btn icon="mdi-shopping-outline" @click="cart.open = !cart.open">
+              <!-- <v-btn icon="mdi-shopping-outline" @click="cart.open = !cart.open">
                 <v-badge :content="5" color="error">
                   <v-icon icon="mdi-shopping-outline"/>
                 </v-badge>
-              </v-btn>
+              </v-btn> -->
 
               <v-dialog max-width="373">
                 <template #activator="{ props }">
